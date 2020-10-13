@@ -1,0 +1,102 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: inherit;
+}
+
+#message{
+  opacity: 0;
+  width: 100%;
+  transition: opacity 500ms;
+  background-color: rgb(219, 36, 36);
+}
+#message p{
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+.title {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.workspace {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.canvas {
+  position: relative;
+}
+
+button {
+  width: 100%;
+  color: white;
+  background-color: rgb(133, 133, 133);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 0;
+  border: none;
+}
+
+.weights {
+  grid-area: weights;
+  cursor: pointer;
+}
+
+.redo {
+  grid-area: redo;
+  background-color: rgb(226, 131, 135);
+  transition: background-color 250ms;
+}
+
+.redo:hover {
+  background-color: rgb(206, 43, 51);
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  width: 200px;
+}
+
+.actions p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.actions input {
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  margin-bottom: 2rem;
+}
+.actions button {
+  margin-bottom: 2rem;
+}
+
+.actions .start {
+  background-color: rgb(33, 136, 30);
+}

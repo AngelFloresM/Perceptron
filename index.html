@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+</head>
+
+<body>
+    <div id="message"></div>
+    <p class="title">Perceptrón</p>
+    <div class="workspace">
+        <div class="canvas">
+            <main id="canvas"></main>
+        </div>
+        <div class="actions">
+            <p style="text-align: center;">Learning Rate</p>
+            <input type="tel" id="learningRate" value="0.3">
+            <p>Iteraciones Máximas</p>
+            <input type="tel" id="max_iter" value="100">
+            <button class="weights">Iniciar Perceptron</button>
+            <button class="redo">Reset Canvas</button>
+            <button class="start">Calcular</button>
+        </div>
+        <div class="error">
+            <p>Error por iteración</p>
+            <main id="error"></main>
+        </div>
+    </div>
+
+    <script src="perceptron.js"></script>
+    <script src="functions.js"></script>
+    <script src="dom.js"></script>
+    <script src="objets.js"></script>
+</body>
+
+</html>
