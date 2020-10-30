@@ -34,5 +34,5 @@ startBtn.addEventListener("click", () => {
 		displayErrorMessage("No se han creado los pesos")
 	}
   initiate = true
-  canvas.frameRate(10)
+  canvas.frameRate(5)
 })

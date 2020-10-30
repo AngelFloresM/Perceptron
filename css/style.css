@@ -1,0 +1,130 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: inherit;
+}
+
+#message {
+  opacity: 0;
+  width: 100%;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+  background-color: #db2424;
+}
+
+#message p {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+.title {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.workspace {
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  grid: "canvas actions" "error error";
+}
+
+.canvas {
+  grid-area: canvas;
+  position: relative;
+}
+
+button {
+  width: 100%;
+  color: white;
+  background-color: #858585;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 0;
+  border: none;
+}
+
+.weights {
+  grid-area: weights;
+  cursor: pointer;
+}
+
+.redo {
+  grid-area: redo;
+  background-color: #e28387;
+  -webkit-transition: background-color 250ms;
+  transition: background-color 250ms;
+}
+
+.redo:hover {
+  background-color: #ce2b33;
+  cursor: pointer;
+}
+
+.actions {
+  grid-area: actions;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  place-content: center;
+  width: 200px;
+}
+
+.actions p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.actions input {
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.actions button {
+  margin-bottom: 2rem;
+}
+
+.actions .start {
+  background-color: #21881e;
+}
+
+.error {
+  grid-area: error;
+}
